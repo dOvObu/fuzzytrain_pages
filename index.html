@@ -1,17 +1,196 @@
-
+<!DOCTYPE html>
 <html>
-  <title>fuzzy train</title>
-  
+	<head>
+		<title>fuzzy train</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+		<meta charset='utf-8'>
+		<!--include scroll animation-->
+		<script src="https://unpkg.com/scrollreveal@4"></script>
+		<script>
+			ScrollReveal({ duration: 1000 })
+		</script>
+		<!--include math-->
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+		</script>
+		<script type="text/javascript"
+			src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
+		
+		<!--include content-->
+		<script type="text/javascript" src="data/data.json"></script>
+		
+		<style>
+		/*First line box-animation*/
+		@keyframes example {
+			0% {
+				transform: scaleX(0);
+			}
+			10% {
+				transform: scaleX(1.5);
+			}
+			30% {
+				transform: scaleX(0.8);
+			}
+			50% {
+				transform: scaleX(1.1);
+			}
+			75% {
+				transform: scaleX(0.95);
+			}
+			100% {
+				transform: scaleX(1);
+			}
+		}
+		
+		.box {
+			display: inline-block;
+			height: 1px;
+			width: 400px;
+			background: black;
+			
+			animation-duration: 2s;
+			animation-fill-mode:both;
+			animation-name:example;
+			text-align:center;
+		}
+		
+		.box2 {
+			text-align:center;
+		}
+		
+		/*Main font and main align*/
+		.header {
+			text-align:center;
+			font-family: 'PT Serif', serif;
+		}
+		
+		.scratch {
+			width: 60%;
+			text-align: left;
+			margin-left: 20%;
+			border: 1px solid #ddd;
+		}
+		
+		.scratch_text {
+			width: 60%;
+			text-align: left;
+			margin-left: 20%;
+		}
+		
+		.little_title {
+			width: 60%;
+			text-align: right;
+			margin-left: 20%;
+		}
+		
+		.date {
+			width: 60%;
+			text-align: right;
+			margin-left: 20%;
+			font-size: 8pt;
+		}
+		
+		.texxmath {
+			width: 60%;
+			margin-left: 20%;
+		}
+		
+		/*Images*/
+		.picture {
+			width: 100%;
+		}
+		
+		.canv {
+			width: 60%;
+			margin-left: 20%;
+		}
+		
+		/*Menu*/
+		.menu {
+			height: 40px;
+		}
+		.menu ul {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%,0%);
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+		.menu ul li {
+			position: relative;
+			list-style: none;
+		}
+		.menu ul li a {
+			position: relative;
+			width: 100px;
+			height: 40px;
+			display: block;
+			color: #000;
+			line-height: 40px;
+			text-align: center;
+			text-decoration: none;
+			transition: .5s;
+			box-sizing: border-box;
+		}
+		.menu ul li a span {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: #000;
+			z-index: -1;
+			transform-origin: top;
+			transform: scaleY(0);
+			transition: transform .5s;
+			left: 0;
+		}
+		.menu ul li a:hover {
+			color: #fff;
+		}
+		.menu ul li a:hover span {
+			transform-origin: bottom;
+			transform: scaleY(1);
+		}
+		</style>
+		<!--include highlight for code-->
+		<link rel="stylesheet" href="styles/default.css">
+		<script src="highlight.pack.js"></script>
+		<link class="codestyle" rel="stylesheet" href="styles/github.css">
+  </head>
   <body>
-    <h1>this is first page of the site</h1>
+		<div class="headline">
+			<span class="header"><h1>Fuzzy train</h1></span>
+		</div>
+		<div class="punchline">
+			<span class="header"><h5>devblog</h5></span>
+		</div>
+		<!--animated line-->
+		<div class="box2"><div class="box"></div></div>
+		<br>
+		<!--main menu-->
+		<div class="menu">
+			<ul>
+				<li><a href="#">Home<span></span></a></li>
+				<li><a href="#">About<span></span></a></li>
+				<li><a href="#">Services<span></span></a></li>
+				<li><a href="#">Team<span></span></a></li>
+				<li><a href="#">Portfolio<span></span></a></li>
+				<li><a href="#">Contact<span></span></a></li>
+			</ul>
+		</div>
+
+		<div id="blog_data" class="header"><br><br></div>
+	
+	<script type="text/javascript" src="js/notes.js"></script>
+		
   </body>
-  
-  <style>
-    body {
-      background-color:white;
-      color:#000;
-      text-align:center;
-    }
-  </style>
-  
+	
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script>
+		ScrollReveal().reveal('.headline', {interval:16,reset:true});
+		ScrollReveal().reveal('.punchline', {delay: 250});
+		ScrollReveal().reveal('.tile', {interval:50,reset:true});
+	</script>
 </html>
+
