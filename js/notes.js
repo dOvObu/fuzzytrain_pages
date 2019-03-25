@@ -82,3 +82,5 @@ for (var i = 0; i < data.length ; ++i) {
 	}
 	subNode.appendChild (document.createElement ('br'));
 }
+
+//$(document).ready(function(){ document.location.href='#'; });
