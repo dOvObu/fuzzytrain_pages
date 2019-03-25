@@ -17,7 +17,7 @@ data = [
 	{
 		title:`Программистер`,
 		content: [
-			{punchline: `И швец, и жнец, и на дуде игрец`},
+			{punchline: `И швец, и жнец, и на дуде игрец...`},
 			{img : `img/ph0.png`},
 			{text : `Знаком с C++, Python, Java, Go, JavaScript, C#, Lisp и cht.sh
 			Email :: c0_0b@mail.ru`}
