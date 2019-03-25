@@ -2,8 +2,7 @@ data = [
 	{
 		title : `Без предисловий`,
 		content : [
-			{img : `https://images.unsplash.com/photo-1542463873-e6b71bc145f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80`},
-			{text: `---------------------------`}
+			{img : `https://images.unsplash.com/photo-1542463873-e6b71bc145f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80`}
 		]
 	},
 	{
