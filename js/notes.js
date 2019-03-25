@@ -62,11 +62,14 @@ for (var i = 0; i < data.length ; ++i) {
 		else if ('img' in data[i].content[j]) {
 			var shell = document.createElement ('div');
 			shell.className = 'canv';
+			var sshell = document.createElement ('div');
+			sshell.className = 'tile';
 			var newNote = document.createElement ('img');
 			newNote.className = 'picture';
 			newNote.src = data[i].content[j].img;
 			
-			shell.appendChild (newNote);
+			sshell.appendChild (newNote);
+			shell.appendChild (sshell);
 			subNode.appendChild (shell);
 		}
 	}
