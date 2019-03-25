@@ -9,7 +9,7 @@ data = [
 		title: `Писака-Сценарист`,
 		content:[
 			{punchline: `Берёт пример с Криса Авеллона`},
-			{img: `img/ph1.jpg`},
+			{img: `img/ph1.png`},
 			{text : `Умеет только сочинять
 			Vk :: https://vk.com/drilyhan`}
 		]
