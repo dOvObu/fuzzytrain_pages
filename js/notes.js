@@ -3,6 +3,8 @@ var node = document.getElementById('blog_data');
 
 var month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
+
+
 for (var i = 0; i < data.length ; ++i) {
 	
 	// тайловая анимация
@@ -79,5 +81,4 @@ for (var i = 0; i < data.length ; ++i) {
 		subNode.appendChild (shell);
 	}
 	subNode.appendChild (document.createElement ('br'));
-	
 }
